@@ -1,10 +1,6 @@
-<script setup>
-import { ref } from 'vue'
-const title = ref('Hello There ✋')
-</script>
-
 <template>
-  <main class="flex min-h-screen items-center justify-center">
-    <h1 class="text-6xl font-thin text-slate-800">{{ title }}</h1>
+  <main class="flex-row-2 min-h-screen scroll-px-6 items-baseline justify-center px-3 py-3 bg-blend-soft-light">
+    <h1 class="left-6 text-4xl font-thin text-blue-900">Dream Dental 🦷</h1>
+    <h1 class="float-left-5 top-1 m-3 text-pink-900 text-opacity-25">Were Dreams come true!</h1>
   </main>
 </template>
