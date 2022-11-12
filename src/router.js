@@ -4,7 +4,11 @@ import HomePage from '@/views/HomePage.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: HomePage },
-  { path: '/other', name: 'Other', component: () => import('@/views/OtherPage.vue') },
+  { path: '/Testimonials', name: 'Testimonials', component: () => import('@/views/TestimonialPage.vue') },
+  { path: '/Schedules', name: 'Schedules', component: () => import('@/views/SchedulePage.vue') },
+  { path: '/Contact', name: 'Contact', component: () => import('@/views/Contactus.vue') },
+  { path: '/Login', name: 'Login', component: () => import('@/views/Login.vue') },
+  { path: '/Logout', name: 'Logout', component: () => import('@/views/Logout.vue') },
 ]
 
 const router = createRouter({
