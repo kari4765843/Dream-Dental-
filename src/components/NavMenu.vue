@@ -1,7 +1,6 @@
 <template>
   <nav>
     <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/Testimonials">Testimonials</RouterLink>
     <RouterLink to="/Schedules">Schedule Appointment</RouterLink>
     <RouterLink to="/Contact">Contact Us</RouterLink>
     <RouterLink to="/Login">Login</RouterLink>

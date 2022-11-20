@@ -4,7 +4,6 @@ import HomePage from '@/views/HomePage.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: HomePage },
-  { path: '/Testimonials', name: 'Testimonials', component: () => import('@/views/TestimonialPage.vue') },
   { path: '/Schedules', name: 'Schedules', component: () => import('@/views/SchedulePage.vue') },
   { path: '/Contact', name: 'Contact', component: () => import('@/views/Contactus.vue') },
   { path: '/Login', name: 'Login', component: () => import('@/views/Login.vue') },
