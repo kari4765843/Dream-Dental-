@@ -41,4 +41,29 @@
   <h1 class="py-8 text-center text-2xl font-thin text-blue-800">INSURANCE WE ACCEPT!</h1>
 
   <img class="w-full place-content-center" src="../assets/pictures/insurance.jpg" />
+
+  <div class="footer">
+    <h1 class="left-1 py-8 px-7 text-center text-2xl font-thin text-white">Contact Details</h1>
+    <h1 class="left-1 py-0 px-6 text-center text-lg font-thin text-white">
+      Address: 7676 S Red Rd #4, Fox, TX 78577, United States
+      <h1 class="text-w left-1 px-7 py-5 text-center text-lg font-thin">Ph:800-811-7688</h1>
+      <h1 class="left-1 px-7 py-1 text-center text-lg font-thin text-white">Email Us: dreamdental@gmail.com</h1>
+      <h1 class="left-1 px-7 py-8 text-center text-lg font-thin text-white">MORE INFO</h1>
+
+      <RouterLink to="/Contact">Contact Us | </RouterLink>
+
+      <RouterLink to="/Schedules">Schedule Appointment |</RouterLink>
+
+      <RouterLink to="/Login"> Login</RouterLink>
+
+      <h1 class="left-1 px-7 py-9 text-center text-lg font-thin text-white shadow-xl">
+        © Copyright Dream Dental 2022 | All Rights Reserved.
+      </h1>
+    </h1>
+  </div>
 </template>
+<style scoped lang="postcss">
+.footer {
+  @apply bg-blue-900;
+}
+</style>
