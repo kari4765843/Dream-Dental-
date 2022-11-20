@@ -50,6 +50,8 @@
       <h1 class="left-1 px-7 py-1 text-center text-lg font-thin text-white">Email Us: dreamdental@gmail.com</h1>
       <h1 class="left-1 px-7 py-8 text-center text-lg font-thin text-white">MORE INFO</h1>
 
+      <RouterLink to="/">Home | </RouterLink>
+
       <RouterLink to="/Contact">Contact Us | </RouterLink>
 
       <RouterLink to="/Schedules">Schedule Appointment |</RouterLink>
@@ -57,7 +59,7 @@
       <RouterLink to="/Login"> Login</RouterLink>
 
       <h1 class="left-1 px-7 py-9 text-center text-lg font-thin text-white shadow-xl">
-        © Copyright Dream Dental 2022 | All Rights Reserved.
+        © Copyright Dream Dental 2022-2023 | All Rights Reserved.
       </h1>
     </h1>
   </div>
