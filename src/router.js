@@ -12,17 +12,13 @@ const routes = [
   },
   { path: '/Submit_page', name: 'Submit', component: () => import('@/views/Submit_page.vue') },
   { path: '/useAuth', name: 'useAuth', composables: () => import('@/composables/useAuth.js') },
-  { path: '/useFirebase', name: 'useFirebase', component: () => import('@/composables/.env') },
+  { path: '/useFirebase', name: 'useFirebase', component: () => import('@/composables/useFirebase.js') },
+  { path: '/Dashboard', name: 'Dashboard', component: () => import('@/views/Dashboard.vue') },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
-
-router.beforeEach((to, _, next) => {
-  if (to.meta.requiresAuth && !isAuthenticated.value) next({ name: 'Login', query: { redirect: to.fullPath } })
-  else next()
 })
 
 export default router
