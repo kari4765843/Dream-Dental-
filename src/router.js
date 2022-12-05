@@ -11,7 +11,6 @@ const routes = [
     component: () => import('@/views/Login.vue'),
   },
   { path: '/Submit_page', name: 'Submit', component: () => import('@/views/Submit_page.vue') },
-  { path: '/useAuth', name: 'useAuth', composables: () => import('@/composables/useAuth.js') },
   { path: '/useFirebase', name: 'useFirebase', component: () => import('@/composables/useFirebase.js') },
   { path: '/Dashboard', name: 'Dashboard', component: () => import('@/views/Dashboard.vue') },
 ]
