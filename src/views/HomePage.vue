@@ -51,14 +51,11 @@
       <h1 class="left-1 px-7 py-8 text-center text-lg font-thin text-white">MORE INFO</h1>
 
       <RouterLink to="/">Home | </RouterLink>
+      <RouterLink to="/Schedules">Contact</RouterLink>
 
-      <RouterLink to="/Contact">Contact Us | </RouterLink>
+      <RouterLink to="/Login"> | Login</RouterLink>
 
-      <RouterLink to="/Schedules">Schedule Appointment |</RouterLink>
-
-      <RouterLink to="/Login"> Login</RouterLink>
-
-      <h1 class="left-1 px-7 py-9 text-center text-lg font-thin text-white shadow-xl">
+      <h1 class="left-1 px-7 py-9 text-center text-lg font-thin text-white underline shadow-xl">
         © Copyright Dream Dental 2022-2023 | All Rights Reserved.
       </h1>
     </h1>
@@ -66,6 +63,6 @@
 </template>
 <style scoped lang="postcss">
 .footer {
-  @apply bg-blue-900;
+  @apply bg-blue-800;
 }
 </style>
