@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*", "src/composables/.env"],
+  "include": ["src/**/*", "src/components/.env"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
