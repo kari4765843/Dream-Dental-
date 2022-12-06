@@ -7,7 +7,7 @@
 
       <h1 class="pt-5 text-center text-4xl font-thin text-white">We will contact you shortly!</h1>
       <div class="OK">
-        <RouterLink to="/">OK</RouterLink>
+        <RouterLink to="/Schedules">OK</RouterLink>
       </div>
     </div>
   </div>
