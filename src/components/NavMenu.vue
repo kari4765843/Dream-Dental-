@@ -1,3 +1,10 @@
+<script setup>
+import { ref } from 'vue'
+import { useAuth } from '@/composables/useAuth'
+
+const { isAuthenticated, logout, user } = useAuth()
+</script>
+
 <template>
   <nav>
     <RouterLink to="/">Home</RouterLink>

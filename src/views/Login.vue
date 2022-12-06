@@ -1,13 +1,33 @@
+<script>
+import { ref } from 'vue'
+import { useAuth } from '@vueuse/firebase/useAuth'
+
+export default {
+  setup() {
+    const login_form = ref({})
+    const auth = useAuth()
+
+    const login = () => {
+      auth.dispatch('login', login_form.value)
+    }
+    return login_form, login
+  },
+}
+</script>
+
 <template>
-  <form action="Dashboard" class="w-max-6 form-input mt-56 ml-72 mr-24 flex bg-blue-800">
-    <h1 class="px-4 text-center text-lg font-semibold text-white">Email</h1>
-    <label for="Email"></label>
-    <input type="text" placeholder="Enter Email" name="Email" required />
-
-    <h1 class="px-4 text-center text-lg font-semibold text-white">Password</h1>
-    <label for="Email"></label>
-    <input type="password " placeholder="Enter Password" name="password" required />
-
-    <button class="btn btn-accent ml-4 bg-red-600 text-white" @click="login">Login</button>
+  <form class="login" @submit.prevent="login">
+    <input v-model="login_form.email" type="text" placeholder="Email" />
+    <input v-model="login_form.Password" type="password" placeholder="Password" />
+    <button type="submit" class="bg-blue-700 px-4 py-2 text-white">Log In</button>
   </form>
 </template>
+
+<style scoped lang="postcss">
+.login-user {
+  @apply mx-auto  mt-80  flex max-w-md flex-col gap-4 rounded-md bg-red-300 p-8 shadow-lg;
+  & input {
+    @apply mt-4 rounded-md px-4 py-3 text-xl ring-1 ring-slate-300;
+  }
+}
+</style>
