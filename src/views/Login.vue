@@ -25,7 +25,7 @@ const logUserIn = async () => {
 </script>
 
 <template>
-  <form action="/login-form" @submit.prevent="logUserIn">
+  <form class="login-form" @submit.prevent="logUserIn">
     <input v-model="Email" type="text" placeholder="Email" />
     <input v-model="password" type="password" placeholder="Password" />
     <button type="submit" class="mt-4 bg-red-300 px-4 py-2">Log In</button>
