@@ -20,7 +20,7 @@ const routes = [
 
   { path: '/Submit_page', name: 'Submit', component: Submit_Page },
 
-  { path: '/Settings', name: 'Settings', component: SettingsPage, meta: { requiresAuth: true } },
+  { path: '/Appointment', name: 'Appointment', component: SettingsPage, meta: { requiresAuth: true } },
 ]
 
 const router = createRouter({
