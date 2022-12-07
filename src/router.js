@@ -5,7 +5,7 @@ const { isAuthenticated } = useAuth()
 
 import HomePage from '@/views/HomePage.vue'
 import SchedulesPage from '@/views/SchedulePage.vue'
-import Login from '@/views/login.vue'
+import Login from '@/views/Login.vue'
 import Submit_Page from '@/views/Submit_Page.vue'
 import SettingsPage from '@/views/SettingsPage.vue'
 
