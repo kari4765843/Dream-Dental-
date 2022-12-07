@@ -13,9 +13,14 @@ const { isAuthenticated, logout, user } = useAuth()
 
   <nav>
     <div v-if="isAuthenticated">
-      <i class="pr-7">Welcome Back ! {{ user?.email }}</i>
-      <RouterLink :to="{ name: 'Settings' }" href="#" class="menu-item">Settings</RouterLink>
-      <RouterLink :to="{ name: 'Home' }" href="#" class="menu-settings" @click="logout">Logout</RouterLink>
+      <i class="mr-7">Welcome Back ! {{ user?.name }}</i>
+      <RouterLink :to="{ name: 'Appointment' }" href="#" class="menu-item bg-red-500 text-white"
+        >Appointment</RouterLink
+      >
+
+      <RouterLink :to="{ name: 'Home' }" href="#" class="menu-settings bg-fuchsia-600 text-white" @click="logout"
+        >Logout</RouterLink
+      >
     </div>
   </nav>
 </template>
